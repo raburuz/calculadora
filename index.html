@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p class="parrafo_head">Calculadora</p>
+    </header>
+    <section>
+            <div class="elementos">
+                <h2>Introduce la Operación</h2>
+                <input type="text" id="entrada_numeros" maxlength="20" value="0" readonly="true" >
+               <div class="operaciones">
+                   <script src="./calculadora.js"></script>
+                   <input type="button" class="grid-item" id="reiniciar" value="c" onclick="reiniciarValores()"></input>
+                   <input type="button" class="grid-item" id="dividir" value="/" onclick="asignarOperador(1)"></input>
+                   <input type="button" class="grid-item" id="multiplicar" value="x" onclick="asignarOperador(2)"></input>
+                   <input type="button" class="grid-item" id="borrar" value="Borrar"onclick="eliminarUltimoElemento()"></input>
+                   <input type="button" class="grid-item" id="siete" value="7" onclick="asignarValores('7')"></input>
+                   <input type="button" class="grid-item" id="ocho" value="8"onclick="asignarValores('8') "></input>
+                   <input type="button" class="grid-item" id="nueve" value="9"onclick="asignarValores('9') "></input>
+                   <input type="button" class="grid-item" id="restar" value="-"onclick="asignarOperador(3)"></input>
+                   <input type="button" class="grid-item" id="cuatro" value="4"onclick="asignarValores('4') "></input>
+                   <input type="button" class="grid-item" id="cinco" value="5"onclick="asignarValores('5') " ></input>
+                   <input type="button" class="grid-item" id="seis" value="6"onclick="asignarValores('6') "></input>
+                   <input type="button" class="grid-item" id="sumar" value="+" onclick="asignarOperador(4)"></input>
+                   <input type="button" class="grid-item" id="uno" value="1"onclick="asignarValores('1') "></input>
+                   <input type="button" class="grid-item" id="dos" value="2" onclick="asignarValores('2') "></input>
+                   <input type="button" class="grid-item" id="tres" value="3"onclick="asignarValores('3') " ></input>
+                   <input type="button" class="grid-item" id="resultado" value="=" onclick="mostrarResultado()"></input>
+                   <input type="button" class="grid-item" id="porcentaje" value="Exp"onclick="asignarOperador(5)" ></input>
+                   <input type="button" class="grid-item" id="cero" value="0" onclick="asignarValores('0') "></input>
+                   <input type="button" class="grid-item" id="coma" value="," onclick=" darComa()"></input>
+               </div> 
+            </div>
+    </section>
+    <footer>  
+        <p>Hecho con ❤️ por Pablo</p>
+    </footer>
+</body>
+</html>
